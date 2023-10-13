@@ -1,0 +1,434 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x : clip; 
+    background-color: whitesmoke;
+}
+
+.background-color{
+    /* background-image: url(images/background-paper.jpg); */
+    /* background-color: whitesmoke; */
+    /* background-size: cover;
+    background-position: center; */
+    /* height: 80vh; */
+    /* width: 100%; */
+    /* position: absolute; */
+    /* top: 40.5vh; */
+
+}
+/* Page profile main */
+
+.main-summary{
+    display: block;
+    position:absolute;
+    top: 30vh;
+    width: 50vh;
+    left: 20vh;
+    
+}
+
+.main-face{
+    background-image: url(https://cdn.pixabay.com/photo/2019/03/19/14/39/thai-4065857_1280.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 80vh;
+    position: absolute;
+    top: 0vh;
+    right: 0vh;
+
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow-x : clip; 
+    overflow-y : clip; 
+}
+
+.main-nav{
+
+}
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 6vh;
+    background-color: #e4ba00;
+    border-radius: 50%;
+    position: absolute;
+    top: 25vh;
+    left: 5vh;
+  }
+.main-nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-bottom: 50px;
+  }
+.main-nav li a:hover {
+    /* background-color: #555; */
+    color: white;
+    /* box-shadow: #000; */
+  }
+
+
+.navbar-mobile {
+    display: none;
+}
+
+main,footer{
+    margin: 5vh;
+}
+header{
+    background-image:url(https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.20rem;
+    margin-top: 20px;
+}
+
+span .mondownload{
+
+}
+
+
+nav a{
+margin-right: 4vh;
+/* color: whitesmoke; */
+}
+
+.nav-skills a{
+    color: #9c5f22;
+    font-size: 1.2rem;
+    /* -webkit-text-stroke: 0.001px white; */
+
+}
+
+.nav-education a{
+    color: #654321;
+    font-size: 1.2rem;
+
+}
+
+.nav-experience a{
+    color: black;
+    font-size: 1.2rem;
+
+}
+
+.nav-contact a{
+    color: brown;
+    font-size: 1.2rem;
+
+}
+
+.navbar-desktop{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border-style: none;
+    border-width: 0;
+}
+
+.face{
+
+    /* top:25vh; */
+    margin-bottom: -25vh;
+}
+
+
+
+.face img{
+    position: relative;
+    top:-17.5vh;
+    margin-bottom: 0vh;
+    width: 20vh; 
+    height: 20vh; 
+    border-radius: 10vh;
+
+}
+
+.face p{
+    position:relative;
+    top:-12vh;
+    left: 5vh;
+    width: 15vh;
+    display: inline-block;
+    width: 25vh;
+    font-size: 3vh;
+     margin-bottom: 25vh;
+}
+
+#contact-form{
+display: block;
+position: relative;
+
+}
+
+
+
+/* #contact a,#contact p{
+    display: inline-block;
+} */
+
+#experience {
+    display: flex; /* Utilisez un conteneur flex pour aligner les cartes en ligne */
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne lorsque l'espace est insuffisant */
+    justify-content: space-between; /* Répartit l'espace disponible entre les cartes */
+    /* margin-top: 3vh; */
+}
+
+.card {
+    flex: 1; /* Les cartes occupent une part égale de l'espace disponible */
+    margin-right: 10px; /* Marge à droite pour espacer les cartes */
+    margin-bottom: 10px; /* Marge en bas pour espacer les lignes de cartes */
+}
+
+#experience h2 {
+    flex: 100%; /* Le h1 occupe toute la largeur disponible (il ne sera pas aligné en ligne avec les cartes) */
+    margin-bottom: 20px;
+}
+
+
+
+
+/* body.disable-scroll {
+    overflow: hidden;
+} */
+ 
+
+
+/* Ipad landscape */
+@media only screen and (max-width: 1100px){
+
+    .main-summary{
+        display: block;
+        position:absolute;
+        top: 25vh;
+        width: 45vh;
+        left: 10vh;
+        
+        
+    }
+    
+    .main-face{
+        background-image: url(https://cdn.pixabay.com/photo/2019/03/19/14/39/thai-4065857_1280.jpg) ;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 60vh;
+        position: absolute;
+        top: 0vh;
+        right: 0vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        overflow-x : clip; 
+        overflow-y : clip; 
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+        position: absolute;
+        top:-3vh;
+        left: 5vh;
+    }
+
+ 
+
+    .dropdown-menu a:hover {
+        background-color: #e4ba00;
+    }
+
+
+}
+
+
+
+/* Ipad portrait/phone landscape */
+@media only screen and (max-width: 1000px){
+    
+.main-summary{
+        display: flexbox;
+        position:absolute;
+        top: 20vh;
+        width: 37.5%;
+        left: 5vh;
+        
+    }
+    
+    .main-face{
+        background-image: url(https://cdn.pixabay.com/photo/2019/03/19/14/39/thai-4065857_1280.jpg) ;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 40vh;
+        position: absolute;
+        top: 0vh;
+        right: 0vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        overflow-x : clip; 
+        overflow-y : clip; 
+    }
+    
+    .main-nav{
+display: none;
+    }
+    
+nav a{
+    margin-right: 1.5vh;
+    color: whitesmoke;
+    font-size: 1rem;
+  }
+
+  .face img{
+    position: relative;
+    top:-17.5vh;
+    left: -5vh;
+    margin-bottom: 0vh;
+    width: 20vh; 
+    height: 20vh; 
+    border-radius: 10vh;
+
+}
+
+.face p{
+    position:relative;
+    top:-11.5vh;
+    left: -2vh;
+    
+    width: 20vh;
+    font-size: 3vh;
+     margin-bottom: 25vh;
+}
+.navbar-desktop {
+    display: none;
+}
+.navbar-mobile {
+    display: block;
+    position: absolute;
+    top:-2vh;
+    left: 5vh;
+}
+
+#experience {
+    display:block; /* Utilisez un conteneur flex pour aligner les cartes en ligne */
+    flex-wrap: nowrap; /* Permet aux cartes de passer à la ligne lorsque l'espace est insuffisant */
+    justify-content: space-between; /* Répartit l'espace disponible entre les cartes */
+    margin-top: 10vh;
+}
+
+}
+
+/* Phone portrait */
+@media only screen and (max-width: 725px){
+
+    .main-summary{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position:absolute;
+        top: 6vh;
+       width: auto;
+       right: 4vh;
+        /* left: 10%; */
+        
+    }
+    
+    .main-face{
+        background-image: url(https://cdn.pixabay.com/photo/2019/03/19/14/39/thai-4065857_1280.jpg) ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 100vh;
+        zoom: 50%;
+        right: 0px;
+        left: 0px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        overflow-x : clip; 
+        overflow-y : clip; 
+    }
+
+    .navbar-mobile {
+        display: block;
+        position: absolute;
+        top:-3vh;
+        left: 2vh;
+    }
+
+
+    /* .face{
+        display: inline;
+    } */
+    .face img{
+        position: relative;
+        top:-17.5vh;
+        left: -5vh;
+        margin-bottom: 0vh;
+        width: 20vh; 
+        height: 20vh; 
+        border-radius: 10vh;
+    
+    }
+    
+    .face p{
+        position:relative;
+        top:-25vh;
+        left: 20vh;
+        right: 0vh;
+        width: 15vh;
+        width: 20vh;
+        font-size: 3vh;
+         margin-bottom: 6vh;
+    }
+
+}
